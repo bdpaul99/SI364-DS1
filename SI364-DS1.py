@@ -23,8 +23,8 @@ def index():
     return 'Hello, World!'
 
 @app.route('/discussion')
-#def discussion():
-    # type a return statement to return "Welcome to first discussion of SI 364!"
+def discussion():
+    return "Welcome to first discussion of SI 364!"
 
 # Part 2
 ## We will now edit the code so that once we run this application locally and go to the
@@ -33,8 +33,9 @@ def index():
 ## Use the format method in return statement to say 'Welcome to discussion <sectionNumber> of SI 364!'
 ## HINT: 'Hello {}!'.format('world') would result in string 'Hello world!'
 
-@app.route('/discussion/<sectionNumber>')
-#def discussionId():
+@app.route('/discussion/sectionNumber')
+def discussionId():
+	return "Welcome to discussion 1 of SI 364!"
 
 if __name__ == '__main__':
     app.run()
